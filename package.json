@@ -28,15 +28,15 @@
   "engines": {
     "node": ">=18"
   },
-  "author": "Witherwithwinter",
+  "author": "0x2fovo",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl.git"
+    "url": "git+https://github.com/0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl.git"
   },
   "bugs": {
-    "url": "https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl/issues"
+    "url": "https://github.com/0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl/issues"
   },
-  "homepage": "https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl#readme",
+  "homepage": "https://github.com/0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl#readme",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

@@ -10,7 +10,7 @@ DeepSeek Harness（DSH）界面右下角的常驻挂件：小鲸鱼气泡图 + D
 
 | 你要挂在哪 | 用哪个包 | 安装方式 |
 |---|---|---|
-| **DSH Web 界面右下角**（`dsh web`） | 本包（`main`） | `dsh plugin --profile web add dsh-whale-widget-bowl`（npm 已发布版）；或从本仓库装 `dsh plugin --profile web add github:Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl` |
+| **DSH Web 界面右下角**（`dsh web`） | 本包（`main`） | `dsh plugin --profile web add dsh-whale-widget-bowl`（npm 已发布版）；或从本仓库装 `dsh plugin --profile web add github:0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl` |
 | **官方桌面客户端（Electron）右下角** | **同一个包** | ⚠️ **不能用** `--profile web`（桌面端读的是 `desktop` profile，CLI 也拒绝 `--profile desktop`）—— 在桌面端会话里**让 DSH 自己装**，见下方「官方桌面端（Electron 客户端）请先看这一节」 |
 
 ⚠️ **与原版不能共存**：本包的路由前缀与上游一致（`/dsh-whale/`），同一个 profile 里**不要**和上游 `dsh-whale-widget` 同时启用 —— 路由会撞车，两边还会各自改写同一批记账文件。要换成本包，先把上游那条从该 profile 的 `dsh.profile.bundles` 里去掉。
@@ -238,7 +238,7 @@ dsh plugin --profile web add link:D:\Plugins\dsh-whale-widget-bowl
 无需本地克隆，一条命令安装：
 
 ```powershell
-dsh plugin --profile web add github:Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl
+dsh plugin --profile web add github:0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl
 ```
 
 说明：
@@ -246,7 +246,7 @@ dsh plugin --profile web add github:Witherwithwinter/DeepSeek-Balance-Whale-Widg
 - 装完后插件会出现在 DSH 的**插件管理页面**里，之后可以直接在页面里更新，无需再手动执行命令
 - 网络环境需要代理时，先设置代理环境变量再执行：
   ```powershell
-  $env:http_proxy="http://<ip>:<port>"; $env:https_proxy="http://<ip>:<port>"; $env:all_proxy="socks5://<ip>:<port>"; dsh plugin --profile web add github:Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl
+  $env:http_proxy="http://<ip>:<port>"; $env:https_proxy="http://<ip>:<port>"; $env:all_proxy="socks5://<ip>:<port>"; dsh plugin --profile web add github:0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl
   ```
 - 安装完成后重启 `dsh web`，再 F5 刷新浏览器
 
@@ -286,7 +286,7 @@ MeteorNOX/DeepSeek-Balance-Whale-Widget，或者我本地已经有这个插件�
 2. 在 Web profile 安装（按我实际拿到的来源任选一种）：
 
    【来源一：从 GitHub 安装】
-     dsh plugin --profile web add github:Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl
+     dsh plugin --profile web add github:0x2fovo/DeepSeek-Balance-Whale-Widget-Bowl
    或从本地 git 仓库链接安装：
      dsh plugin --profile web add link:<仓库绝对路径>
    （注意：仓库根目录就是插件包，不要写成 link:.\dsh-whale-widget-bowl 这种带子目录的路径）
